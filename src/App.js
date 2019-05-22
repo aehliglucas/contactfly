@@ -1,28 +1,29 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import contactList from './components/contactList';
+import messageBoard from './components/messageBoard';
+import contactInfo from './components/contactInfo';
 import './App.css';
 
-class App extends Component {
+// class Header extends Component {
+//   render() {
+//     return (
+//       <header className="App-header">
+//         <img src={logo} className="App-logo" alt="logo" />
+//         <h1 className="App-title">{this.props.title}</h1>
+//       </header>
+//     )
+//   }
+// }
+
+
+export default class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <contactList title="CLmain" />
+        <messageBoard title="MBmain"/>
+        <contactInfo title="CImain" />
       </div>
     );
   }
 }
-
-export default App;

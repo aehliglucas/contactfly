@@ -19,15 +19,25 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.panel {
+  height: 75%;
+  margin-top: 15px;
+  width: 25%;
+}
+
+#contactInfo {
+  background-color: blue;
+}
+
+#contactList {
+  background-color: green;
+}
+
+#messageBoard {
+  background-color: red;
 }
